@@ -18,12 +18,11 @@ public class NegativosPositivosParImpar {
         while(x > 0){
             System.out.println("Escreva um número positivo qualquer ou digite um número negativo para sair: ");
             x = sc.nextInt();
-            // Precisa impedir que quando digitado um negativo ele não passe pelo if;
-            // não usar um novo if pq se fosse isso eu mesmo tinha feito;
-            if (x % 2 == 0){
+
+            if ( x > 0 && x % 2 == 0){
                 System.out.println("Esse número é par!");
                 evenSum += x;
-            } else {
+            } else if(x > 0){
                 System.out.println("Esse número é impar!");
                 oddSum += x;
             }
